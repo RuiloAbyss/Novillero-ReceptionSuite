@@ -1,3 +1,38 @@
-body{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*PALETA DE COLORES*/
+:root{
+    --cafe-1: #453d2a;
+    --ghost: #ffffff00;/*Transparente*/
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.top-menu{
+    background-color: var(--cafe-1);
+    color: white;
+    font-weight: bold
+    ;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-menu{
+    padding: 20px 40px 20px 40px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: var(--ghost);
+    border: 0;
+}
+
+/*BOTONES*/
+.btn-ghost{
+    background-color: var(--ghost);
 }
