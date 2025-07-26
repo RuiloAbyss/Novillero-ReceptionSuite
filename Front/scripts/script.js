@@ -8,3 +8,12 @@ function loadHTML(file) {
       console.error('Error al cargar el archivo:', error);
     });
 }
+
+window.addEventListener("scroll", () => {
+  const Menu = document.querySelector(".menu");
+  if (window.scrollY > 50) {
+    Menu.classList.add("compact");
+  } else {
+    Menu.classList.remove("compact");
+  }
+});

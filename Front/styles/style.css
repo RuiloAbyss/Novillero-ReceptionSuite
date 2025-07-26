@@ -2,8 +2,13 @@
 
 /*PALETA DE COLORES*/
 :root{
-    --cafe-1: #453d2a;
     --ghost: #ffffff00;/*Transparente*/
+    --cafe-1: #453d2a;
+    --azul-1: #7dbcf3;
+    --azul-2: #2784d5;
+    --azul-3: #1c4c7c;
+    --gris-1: #d6ceb9;
+    --gris-2: #55828a;
 }
 
 body {
@@ -11,28 +16,75 @@ body {
   margin: 0;
 }
 
-.top-menu{
-    background-color: var(--cafe-1);
+.menu{
+    background-color: var(--azul-3);
     color: white;
-    font-weight: bold
-    ;
+    font-weight: bold;
     height: 10vh;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+    gap: 100px;
+    z-index: 9999;
+
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease;
+}
+
+.menu.compact{
+    height: 6vh;
+    background-color: #1c4c7c88;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 8px #00000033;
+}
+
+.menu:hover{
+    background-color: var(--azul-3);
+    color: white;
+    font-weight: bold;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 
 .btn-menu{
-    padding: 20px 40px 20px 40px;
+    padding: 20px 0px 20px 0px;
+    width: auto;
     font-size: large;
     font-weight: bold;
+    text-align: center;
     color: white;
     background-color: var(--ghost);
     border: 0;
 }
 
+.btn-menu:hover{
+    cursor: pointer;
+}
+
 /*BOTONES*/
-.btn-ghost{
+#btn-color{
+    background-color: var(--azul-2);
+    border: 0px solid #ffffff38;
+    padding: 17px;
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #00000033;
+    font-size: medium;
+}
+#btn-ghost{
     background-color: var(--ghost);
+    backdrop-filter: blur(5px);
+    border: 2px solid #ffffff80;
+    padding: 15px;
+    border-radius: 100px;
+    color: white;
+    box-shadow: 0 2px 8px #00000033;
+    font-size: medium;
 }

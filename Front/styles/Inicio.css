@@ -1,0 +1,15 @@
+#gallery {
+  background-image: url("../resources/playa_4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 3 / 1;
+}
+
+#galleryCont{
+  aspect-ratio: 3 / 1;
+  display: flex;
+  gap: 20px;
+  padding: 5%;
+  align-items: end;
+}
