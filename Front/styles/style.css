@@ -2,13 +2,17 @@
 
 /*PALETA DE COLORES*/
 :root{
-    --ghost: #ffffff00;/*Transparente*/
-    --cafe-1: #453d2a;
-    --azul-1: #7dbcf3;
-    --azul-2: #2784d5;
-    --azul-3: #1c4c7c;
-    --gris-1: #d6ceb9;
-    --gris-2: #55828a;
+    --ghost: #00000020;/*Transparente*/
+    --crema: #ebddcd;
+    --late: #ddb576;
+    --cafe: #a97452;
+    --galleta: #786a5c;
+    --fresco: #55828a; 
+    --chocolate: #453d2a;
+}
+
+.btn-menu, .btn-menu.activo, .btn-ghost, .btn-color{
+    cursor: pointer;
 }
 
 body {
@@ -17,15 +21,14 @@ body {
 }
 
 .menu{
-    background-color: var(--azul-3);
-    color: white;
+    background-color: var(white);
     font-weight: bold;
-    height: 10vh;
+    height: 7vh;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 5%;
     z-index: 9999;
 
     position: sticky;
@@ -33,55 +36,63 @@ body {
     transition: all 0.3s ease;
 }
 
-.menu.compact{
-    height: 6vh;
-    background-color: #1c4c7c88;
+.menu.glass{
+    background-color: #ffffff80;
     backdrop-filter: blur(5px);
     box-shadow: 0 2px 8px #00000033;
 }
 
 .menu:hover{
-    background-color: var(--azul-3);
+    background-color: white;
     color: white;
     font-weight: bold;
-    height: 10vh;
+    height: 9vh;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 100px;
 }
 
 .btn-menu{
-    padding: 20px 0px 20px 0px;
+    padding: 10px;
     width: auto;
     font-size: large;
     font-weight: bold;
     text-align: center;
-    color: white;
-    background-color: var(--ghost);
+    background-color: rgba(255, 255, 255, 0);
     border: 0;
+    border-radius: 50px;
 }
 
-.btn-menu:hover{
+.btn-menu:hover, .btn-menu.activo:hover{
     cursor: pointer;
+    background-color: var(--chocolate);
+    color: var(--crema);
 }
+
+.btn-menu.activo {
+  color: var(--chocolate);
+  border: solid 3px #453d2a;
+  font-weight: bold;
+  padding: 7px;
+}
+
 
 /*BOTONES*/
-#btn-color{
-    background-color: var(--azul-2);
-    border: 0px solid #ffffff38;
+.btn-color{
+    background-color: var(--cafe);
+    border: 0px solid var(--crema);
     padding: 17px;
     border-radius: 100px;
-    color: white;
+    color: var(--crema);
     font-weight: bold;
     box-shadow: 0 2px 8px #00000033;
     font-size: medium;
 }
-#btn-ghost{
+.btn-ghost{
     background-color: var(--ghost);
-    backdrop-filter: blur(5px);
-    border: 2px solid #ffffff80;
+    backdrop-filter: blur(3px);
+    border: 2px solid #ffffff50;
     padding: 15px;
     border-radius: 100px;
     color: white;
