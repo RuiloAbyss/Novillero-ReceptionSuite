@@ -3,8 +3,8 @@ Es una interfaz web diseñada para recepcionistas de hotel, enfocada en la gesti
 
 ## 📄Contenido📄
 
-- Presenta información relevante de la página
-- Muestra diferentes habitaciones pde distintos tamaños y precios
-- Ver disponibilidad de habitaciones en tiempo real
-- Una sección que permite reservar las habitaciones mediante un formulario
-- **Suite**
+- 🏠 **Incio**: Presenta información relevante de la página
+- 🚪 **Habitaciones**: Muestra diferentes habitaciones pde distintos tamaños y precios
+- 🛎️ **Recepción**: Una sección que permite reservar las habitaciones mediante un formulario
+- 📋 **Reservaciones**: Permite ver la disponibildad de las habitaciones
+- 🏅 **Integraciones**: Ver y modificar disponibilidad de habitaciones en tiempo real
