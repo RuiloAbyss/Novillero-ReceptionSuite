@@ -16,17 +16,22 @@
 }
 
 /*CONTENIDO DE INICIO-------------------*/
-.content{
+.about{
   margin: 100px 25% 100px 25%;
   color: var(--americano);
 }
 
 /*HABITACIONES*/
+.room-section{
+  padding: 100px 25% 100px 25%;
+  color: var(--americano);
+}
+
 .room-section > h2{
   margin-top: 50px;
 }
 
-.Room-Gallery{
+.room-Gallery{
   display: flex;
   overflow-x: auto;
   gap: 10px;
@@ -35,7 +40,7 @@
   margin: 10px;
 }
 
-.Room{
+.room{
   background-color: var(--crema);
   border-radius: 15px;
   width: 500px;
@@ -43,7 +48,7 @@
   flex: 0 0 auto;
 }
 
-.Room-content{
+.room-content{
   margin: 20px;
 }
 
@@ -125,8 +130,12 @@
     align-items: end;
   }
   /*CONTENIDO DE INICIO-------------------*/
-  .content{
+  .about{
     margin: 50px 15% 50px 15%;
+  }
+
+  .room-section{
+    padding: 50px 15% 50px 15%;
   }
 
   /*FAQ*/
@@ -152,16 +161,20 @@
     justify-content: center;
   }
   /*CONTENIDO DE INICIO-------------------*/
-  .content{
+  .about{
     margin: 30px 10% 30px 10%;
   }
 
   /*HABITACIONES*/
+  .room-section{
+    padding: 30px 10% 30px 10%;
+  }
+
   .room-section > h2{
     margin-top: 30px;
   }
 
-  .Room{
+  .room{
     background-color: var(--crema);
     border-radius: 15px;
     width: 350px;

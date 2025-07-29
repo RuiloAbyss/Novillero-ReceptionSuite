@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <!--CARRUSEL DE FOTOS-->
-    <div id = "gallery">
-        <div id="galleryCont">
-            <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reserva la tuya ya</button>
-            <button class="btn-ghost" onclick="loadHTML('Inicio.html', 'rooms')">Conoce las habitaciones</button>
-        </div>   
-    </div>
-    <!--CONTENIDO-->
-    <div class = "content">
+    <section id="inicio">
+        <div id = "gallery"><!--CARRUSEL DE FOTOS-->
+            <div id ="galleryCont">
+                <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reserva la tuya ya</button>
+                <button class="btn-ghost" onclick="loadHTML('Inicio.html', 'rooms')">Conoce las habitaciones</button>
+            </div>   
+        </div>
         <!--INFORMACIÓN DE LA EMPRESA-->
         <div class="about">
             <h1>Quienes somos</h1>
@@ -34,115 +32,112 @@
             está pensado para que tu descanso sea pleno y tu estancia, inolvidable.    
             </p>
         </div>
-    </div>
-    <div class="division" id ="rooms"></div> <!--DIVISION-->
-    <div class="content">
-        <!--HABITACIONES-->
-        <div class="room-section">
-            <h1>Habitaciones</h1>
-            <!--KING SIZE-->
-            <h2>King Size</h2>
-            <div class="Room-Gallery">
-                <div class="Room">
-                    <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
-                        <h3>Habitación King Size</h3>
-                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
-                    </div>
-                    <div class="Room-content">
-                        <h4>Amenidades</h4>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </div>
-                    <span></span>
+    </section>
+    <div class="division" id ="top-rooms"></div><!--DIVISION-->
+    <!--HABITACIONES-->
+    <section class="room-section" id = rooms>
+        <h1>Habitaciones</h1>
+        <!--KING SIZE-->
+        <h2>King Size</h2>
+        <div class="room-Gallery">
+            <div class="room">
+                <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
+                    <h3>Habitación King Size</h3>
+                    <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                 </div>
-                <div class="Room">
-                    <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
-                        <h3>Habitación King Size</h3>
-                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
-                    </div>
-                    <div class="Room-content">
-                        <h4>Amenidades</h4>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </div>
-                    <span></span>
+                <div class="room-content">
+                    <h4>Amenidades</h4>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
                 </div>
-                <div class="Room">
-                    <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
-                        <h3>Habitación King Size</h3>
-                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
-                    </div>
-                    <div class="Room-content">
-                        <h4>Amenidades</h4>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </div>
-                    <span></span>
-                </div>
+                <span></span>
             </div>
-            <!--HOME SIZE-->
-            <h2>Home Size</h2>
-            <div class="Room-Gallery">
-                <div class="Room">
-                    <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
-                        <h3>Habitación Home Size</h3>
-                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
-                    </div>
-                    <div class="Room-content">
-                        <h4>Amenidades</h4>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </div>
-                    <span></span>
+            <div class="room">
+                <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
+                    <h3>Habitación King Size</h3>
+                    <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                 </div>
-                <div class="Room">
-                    <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
-                        <h3>Habitación Home Size</h3>
-                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
-                    </div>
-                    <div class="Room-content">
-                        <h4>Amenidades</h4>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </div>
-                    <span></span>
+                <div class="room-content">
+                    <h4>Amenidades</h4>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
                 </div>
-                <div class="Room">
-                    <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
-                        <h3>Habitación Home Size</h3>
-                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
-                    </div>
-                    <div class="Room-content">
-                        <h4>Amenidades</h4>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </div>
-                    <span></span>
+                <span></span>
+            </div>
+            <div class="room">
+                <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
+                    <h3>Habitación King Size</h3>
+                    <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
+            </div>
+                <div class="room-content">
+                    <h4>Amenidades</h4>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
                 </div>
+                <span></span>
             </div>
         </div>
-        <!--FIN DE HABITACIONES-->
-    </div><!--FIN DE CONTENT-->
+        <!--HOME SIZE-->
+        <h2>Home Size</h2>
+        <div class="room-Gallery">
+            <div class="room">
+                <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
+                    <h3>Habitación Home Size</h3>
+                    <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
+                </div>
+                <div class="room-content">
+                    <h4>Amenidades</h4>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <span></span>
+            </div>
+            <div class="room">
+                <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
+                    <h3>Habitación Home Size</h3>
+                    <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
+                </div>
+                <div class="room-content">
+                    <h4>Amenidades</h4>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <span></span>
+            </div>
+            <div class="room">
+                <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
+                    <h3>Habitación Home Size</h3>
+                    <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
+                </div>
+                <div class="room-content">
+                    <h4>Amenidades</h4>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <span></span>
+            </div>
+        </div>
+    </section><!--FIN DE HABITACIONES-->
     <!--FAQ-->
-    <div class="FAQ-section" id ="FAQ">
+    <section class="FAQ-section" id ="FAQ">
         <h1>Preguntas Frecuentes</h1>
         <div class="FAQ-box">
             <h2>¿A qué hora es el check-in y check-out?</h2>
@@ -168,8 +163,8 @@
             <h2>¿Tienen acceso a la playa?</h2>
             <p>Sí, el hotel cuenta con acceso directo a la playa más tranquila y extensa de la región.</p>
         </div> 
-    </div>
-    <div class="contact-section" id="contact">
+    </section>
+    <section class="contact-section" id="contact">
         <h1>Contactanos</h1>
         <p><strong>Teléfono:</strong> +52 389 100 2345</p>
         <p><strong>WhatsApp:</strong> +52 389 100 2345</p>
@@ -179,6 +174,6 @@
             Facebook: @HotelCostaNorte<br><br>
             Instagram: @hotelcostanorte.mx
         </p>
-    </div>
+    </section>
 </body>
 </html>
