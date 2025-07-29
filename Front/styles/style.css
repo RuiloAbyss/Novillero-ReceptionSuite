@@ -7,10 +7,15 @@
     --late: #ddb576;
     --cafe: #a97452;
     --galleta: #786a5c;
-    --fresco: #55828a; 
     --chocolate: #453d2a;
+    --americano: #322c1e;
 }
 
+.division{
+    height: 50px;
+    width: 100%;
+    background-color: var(--galleta);
+}
 .ICON{
     background-image: url("../resources/hotel_novillero.png");
     width: 10%;
@@ -65,19 +70,20 @@ body {
     font-weight: bold;
     text-align: center;
     background-color: rgba(255, 255, 255, 0);
+    color: var(--chocolate);
     border: 0;
     border-radius: 50px;
 }
 
 .btn-menu:hover, .btn-menu.activo:hover{
     cursor: pointer;
-    background-color: var(--chocolate);
+    background-color: var(--galleta);
     color: var(--crema);
 }
 
 .btn-menu.activo {
   color: var(--chocolate);
-  border: solid 3px #453d2a;
+  border: solid 3px var(--late);
   font-weight: bold;
   padding: 7px;
 }
@@ -86,7 +92,7 @@ body {
 /*BOTONES*/
 .btn-color{
     background-color: var(--cafe);
-    border: 0px solid var(--crema);
+    border: 0px solid var(--late);
     padding: 17px;
     border-radius: 100px;
     color: var(--crema);
@@ -103,4 +109,41 @@ body {
     color: white;
     box-shadow: 0 2px 8px #00000033;
     font-size: medium;
+}
+
+/*RESPONSIVE 30%========================*/
+@media (max-width: 600px) {
+    h1{
+        font-size:x-large
+    }
+    h2{
+        font-size: large;
+    }
+    h3{
+        font-size: medium;
+    }
+    p{
+        font-size: small;
+    }
+
+    .menu{
+        gap: 1%;
+    }
+
+    .menu.glass{
+        background-color: #ffffff80;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 2px 8px #00000033;
+    }
+
+    .btn-menu{
+        font-size: medium;
+    }
+
+    .btn-menu.activo {
+    color: var(--chocolate);
+    border: solid 3px var(--late);
+    font-weight: bold;
+    padding: 7px;
+    }
 }
