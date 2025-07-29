@@ -11,6 +11,11 @@
     --chocolate: #453d2a;
 }
 
+.ICON{
+    background-image: url("../resources/hotel_novillero.png");
+    width: 10%;
+    height: 50px;
+}
 .btn-menu, .btn-menu.activo, .btn-ghost, .btn-color{
     cursor: pointer;
 }

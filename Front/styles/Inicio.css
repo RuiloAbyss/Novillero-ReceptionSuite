@@ -1,3 +1,7 @@
+.Info{
+  margin: 100px 20% 0 20%;
+}
+
 #gallery {
   background-image: url("../resources/playa_5.jpg");
   background-size: cover;
@@ -12,4 +16,45 @@
   gap: 20px;
   padding: 5%;
   align-items: end;
+}
+
+.Room-Gallery{
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.Room{
+  background-color: var(--crema);
+  border-radius: 15px;
+  width: 500px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.Room-content{
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.over-img{
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  aspect-ratio: 3 / 2;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 20px;
+  color: white;
+}
+
+.Room span{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
 }
