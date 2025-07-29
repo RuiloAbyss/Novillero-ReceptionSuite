@@ -10,8 +10,8 @@
     <!--CARRUSEL DE FOTOS-->
     <div id = "gallery">
         <div id="galleryCont">
-            <button class="btn-color">Reserva la tuya ya</button>
-            <button class="btn-ghost">Conoce las habitaciones</button>
+            <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reserva la tuya ya</button>
+            <button class="btn-ghost" onclick="loadHTML('Inicio.html', 'rooms')">Conoce las habitaciones</button>
         </div>   
     </div>
     <!--CONTENIDO-->
@@ -35,7 +35,7 @@
             </p>
         </div>
     </div>
-    <div class="division"></div> <!--DIVISION-->
+    <div class="division" id ="rooms"></div> <!--DIVISION-->
     <div class="content">
         <!--HABITACIONES-->
         <div class="room-section">
@@ -46,7 +46,7 @@
                 <div class="Room">
                     <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
                         <h3>Habitación King Size</h3>
-                        <button class="btn-color">Reservar</button>
+                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                     </div>
                     <div class="Room-content">
                         <h4>Amenidades</h4>
@@ -61,7 +61,7 @@
                 <div class="Room">
                     <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
                         <h3>Habitación King Size</h3>
-                        <button class="btn-color">Reservar</button>
+                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                     </div>
                     <div class="Room-content">
                         <h4>Amenidades</h4>
@@ -76,7 +76,7 @@
                 <div class="Room">
                     <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
                         <h3>Habitación King Size</h3>
-                        <button class="btn-color">Reservar</button>
+                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                     </div>
                     <div class="Room-content">
                         <h4>Amenidades</h4>
@@ -95,7 +95,7 @@
                 <div class="Room">
                     <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
                         <h3>Habitación Home Size</h3>
-                        <button class="btn-color">Reservar</button>
+                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                     </div>
                     <div class="Room-content">
                         <h4>Amenidades</h4>
@@ -110,7 +110,7 @@
                 <div class="Room">
                     <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
                         <h3>Habitación Home Size</h3>
-                        <button class="btn-color">Reservar</button>
+                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                     </div>
                     <div class="Room-content">
                         <h4>Amenidades</h4>
@@ -125,7 +125,7 @@
                 <div class="Room">
                     <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
                         <h3>Habitación Home Size</h3>
-                        <button class="btn-color">Reservar</button>
+                        <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                     </div>
                     <div class="Room-content">
                         <h4>Amenidades</h4>
@@ -142,7 +142,7 @@
         <!--FIN DE HABITACIONES-->
     </div><!--FIN DE CONTENT-->
     <!--FAQ-->
-    <div class="FAQ-section">
+    <div class="FAQ-section" id ="FAQ">
         <h1>Preguntas Frecuentes</h1>
         <div class="FAQ-box">
             <h2>¿A qué hora es el check-in y check-out?</h2>
@@ -168,6 +168,17 @@
             <h2>¿Tienen acceso a la playa?</h2>
             <p>Sí, el hotel cuenta con acceso directo a la playa más tranquila y extensa de la región.</p>
         </div> 
+    </div>
+    <div class="contact-section" id="contact">
+        <h1>Contactanos</h1>
+        <p><strong>Teléfono:</strong> +52 389 100 2345</p>
+        <p><strong>WhatsApp:</strong> +52 389 100 2345</p>
+        <p><strong>Correo Electrónico:</strong> contacto@NovilleroHotel.com</p>
+        <p><strong>Dirección:</strong> Luis Donaldo Colosio 133-Sur, 63466 Playa Novillero, Nay.</p>
+        <p><strong>También puedes seguirnos en redes sociales para conocer promociones, eventos y noticias:</strong><br><br>
+            Facebook: @HotelCostaNorte<br><br>
+            Instagram: @hotelcostanorte.mx
+        </p>
     </div>
 </body>
 </html>

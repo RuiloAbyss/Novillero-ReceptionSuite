@@ -1,13 +1,25 @@
-function loadHTML(file) {
+function loadHTML(file, targetId = null) {
   fetch(file)
     .then(res => res.text())
     .then(html => {
-      document.getElementById('page-content').innerHTML = html;
+      const content = document.getElementById('page-content');
+      content.innerHTML = html;
+
+      // Espera a que el contenido se inserte antes de buscar el id
+      setTimeout(() => {
+        if (targetId) {
+          const target = document.getElementById(targetId);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }, 50); // puedes ajustar este valor si es necesario
     })
     .catch(error => {
       console.error('Error al cargar el archivo:', error);
     });
 }
+
 
 loadHTML('Inicio.html');
 

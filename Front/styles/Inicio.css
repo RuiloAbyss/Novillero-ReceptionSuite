@@ -107,6 +107,13 @@
   opacity: 1;
 }
 
+/*CONTACT*/
+.contact-section{
+  padding: 100px 25% 100px 25%;
+  background-color: var(--americano);
+  color: var(--crema);
+}
+
 /*RESPONSIVE 50%========================*/
 @media (max-width: 960px) {
   /*GALERIA DE IMAGENES*/
@@ -124,6 +131,10 @@
 
   /*FAQ*/
   .FAQ-section{
+    padding: 50px 15% 50px 15%;
+  }
+  /*CONTACT*/
+  .contact-section{
     padding: 50px 15% 50px 15%;
   }
   
@@ -190,7 +201,9 @@
     opacity: 0;
     transition: max-height 0.3s ease, opacity 0.3s ease;
   }
-
-  
+  /*CONTACT*/
+  .contact-section{
+    padding: 30px 10% 30px 10%;
+  }
   
 }
