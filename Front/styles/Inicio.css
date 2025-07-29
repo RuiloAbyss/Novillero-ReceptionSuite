@@ -4,11 +4,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  aspect-ratio: 3 / 1;
+  aspect-ratio: 5 / 2;
 }
 
 #galleryCont{
-  aspect-ratio: 3 / 1;
+  aspect-ratio: 5 / 2;
   display: flex;
   gap: 20px;
   padding: 0 0 3% 10% ;
