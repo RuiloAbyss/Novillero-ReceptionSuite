@@ -3,7 +3,7 @@ async function crearReserva(){
     console.log("Función crearReserva() ejecutada");
     alert("Función iniciada");
     const nombre = document.getElementById('nombre').value.trim();
-    const apellidos = document.getElementById('apellido').value.trim();
+    const apellidos = document.getElementById('apellidos').value.trim();
     const fecha = document.getElementById('fecha').value.trim();
     const tipoHabitacion = document.querySelector('input[name="radios"]:checked').value;
     const selectPersonas = document.getElementById('personas');
@@ -25,7 +25,7 @@ async function crearReserva(){
             throw new Error(data.message || "Error al crear reserva");
         }
 
-        alert(data.message);
+         alert(data.message);
          alert("Reserva creada exitosamente!\n\nDetalles:\n" +
               `Nombre: ${nombre} ${apellidos}\n` +
               `Fecha: ${fecha}\n` +

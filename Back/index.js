@@ -5,7 +5,7 @@ const mongose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const PORT = 3000;
-mongose.connect('mongodb+srv://root:1234567890@books.8bcr4g7.mongodb.net/Novillero_Resort?retryWrites=true&w=majority&appName=Novillero_Resort')
+mongose.connect('mongodb+srv://egmt:cCLWIi6hSFtPNZMe@root.3no4nxd.mongodb.net/Nivillero_Resort?retryWrites=true&w=majority&appName=Reserva')
 .then(() => console.log("Mongo DB conectado"))
 .catch(error => console.log(error.message));
 

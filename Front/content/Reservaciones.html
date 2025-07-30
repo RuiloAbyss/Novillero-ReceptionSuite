@@ -37,25 +37,28 @@
         <!--Tipo habitacion-->
         <label>¡ Escoje la experiencia para tu habitacion !</label>
         <br>
-        <input type="radio" value="opcion1" id="radios" name="radios" checked>
-        <label for="radios">Estandar</label><br>
-        <input type="radio" value="opcion2" id="radios" name="radios">
-        <label for="Usado">Premium</label>
-        <br>
-
+        
+        <input type="radio" value="Estandar" id="radioEstandar" name="tipoHabitacion" checked>
+        <label for="radioEstandar">Estandar</label><br>
+        <input type="radio" value="Premium" id="radioPremium" name="tipoHabitacion">
+        <label for="radioPremium">Premium</label>
+        
+        <!--Numero personas-->
         <label>¿ Con cuantas personas piensas reservar ?</label>
-        <br>
-       <select id="personas">
-         <option value="opcion1">1 persona</option>
-         <option value="opcion2">2 personas</option>
-         <option value="opcion3">4 personas</option>
-       </select>
+        <select id="personas">
+          <option value="1">1 persona</option>
+          <option value="2">2 personas</option>
+          <option value="4">4 personas</option>
+        </select>
+
+        
+        
         <br>
         <!--Botones-->
          <button onclick="crearReserva()">Reservar</button>
          <input type="reset" value="Limpiar">
 
-         <script src="/Novillero-ReceptionSuite/Front/scripts/script_func.js"></script>
+         <script src="/Novillero-ReceptionSuite/Back/script_func.js"></script>
     </form>
 
 </body>
