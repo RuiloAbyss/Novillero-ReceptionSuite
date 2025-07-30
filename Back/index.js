@@ -82,17 +82,21 @@ app.put('/update/reserva', async (req, res) => {
     }
 });
 //Metdo get 
-app.get('/get',async (req,res) => {
-    try{
-       const Datos = await Novillero_Resort.find();//Consulata todos los registros del modelo 
-       return res.status(200).json({
-        message: "Datos obtenidos con exito",
-        Datos: Datos
-       });
-    }catch(error){
-        return res.status(500).json({
-            message : "Error al consultar datos",
-            error: error
+app.get('/get', async (req, res) => {
+    try {
+        const reservaciones = await Novillero_Resort.find().sort({ fecha: 1 });
+        
+    
+        res.status(200).json({
+            success: true,
+            data: reservaciones
+        });
+        
+    } catch(error) {
+        console.error("Error en GET /get:", error);
+        res.status(500).json({
+            success: false,
+            error: error.message
         });
     }
 });

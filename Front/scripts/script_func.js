@@ -87,39 +87,44 @@ async function actualizarReservaEquivalente() {
     }
 }
 
-/*
-async function obtenerLibros() {
-    try{
-        const res = await fetch(apiURL + "/getBooks");
-        const data = await res.json();
+async function cargarReservaciones() {
+    try {
+        const response = await fetch(`${apiURL}/get`);
+        const { data: reservaciones } = await response.json();
 
-        const librosDiv = document.getElementById('libros');
-        librosDiv.innerHTML = '';
+        if (!response.ok) throw new Error("Error al obtener reservaciones");
 
-        data.libros.forEach(libro => {
-            const div = document.createElement('div');
-            div.className = 'libro';
-            div.innerHTML = `
-            <img src="${libro.imagen}">
-            <h3>${libro.titulo}</h3>
-            <p><strong>Autor:</strong> ${libro.autor}</p>
-            <p><strong>Stock:</strong> ${libro.stock}</p>
-            <div class = "card-buttons">
-                <button class="update"
-                onclick="actualizarLibro('${libro._id}')">Actualizar</button>
+        const tablaBody = document.querySelector('#reservationsTable tbody');
+        tablaBody.innerHTML = ''; // Limpiar tabla existente
 
-                <button class="delete"
-                onclick="eliminarLibro('${libro._id}')">Eliminar</button>
-            </div>
+        reservaciones.forEach(reserva => {
+            const fila = document.createElement('tr');
+            
+            // Formatear fecha para mejor visualización
+            const fechaFormateada = new Date(reserva.fecha).toLocaleDateString('es-ES', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            fila.innerHTML = `
+                <td>${reserva.nombre}</td>
+                <td>${reserva.apellidos}</td>
+                <td>${fechaFormateada}</td>
+                <td>${reserva.tipoHabitacion}</td>
+                <td>${reserva.numPersonas}</td>
             `;
-            librosDiv.appendChild(div)
+
+            tablaBody.appendChild(fila);
         });
 
-    }catch (error){
-        alert("Error al obtener libros");
-        console.error(error);
+    } catch (error) {
+        console.error("Error al cargar reservaciones:", error);
+        //alert("Error al cargar reservaciones: " + error.message);
     }
 }
-    obtenerLibros();
 
-*/
+// Llamar a la funcion 
+document.addEventListener('DOMContentLoaded', cargarReservaciones);
+
+
