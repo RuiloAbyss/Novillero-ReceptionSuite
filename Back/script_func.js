@@ -26,12 +26,7 @@ async function crearReserva(){
         }
 
          alert(data.message);
-         alert("Reserva creada exitosamente!\n\nDetalles:\n" +
-              `Nombre: ${nombre} ${apellidos}\n` +
-              `Fecha: ${fecha}\n` +
-              `Habitación: ${tipoHabitacion}\n` +
-              `Personas: ${numPersonas}`);
-
+         alert(`Reserva creada exitosamente!\n\nDetalles:\nNombre: ${nombre} ${apellidos}\nFecha: ${fecha}\nHabitación: ${tipoHabitacion}\nPersonas: ${numPersonas}`);
         // Limpiar campos
         document.getElementById('nombre').value = '';
         document.getElementById('apellidos').value = '';
@@ -40,6 +35,53 @@ async function crearReserva(){
     } catch(error) {
         alert(error.message);
         console.error(error);
+    }
+}
+
+async function actualizarReservaEquivalente() {
+    try {
+        // Obtener valores del formulario
+        const tipoHabitacion = document.querySelector('input[name="radios"]:checked').value;
+        const numPersonas = document.getElementById('personas').value;
+        const fecha = document.getElementById('fecha').value.trim();
+        
+        const fechaReserva = new Date(fecha);
+        const fechaActual = new Date();
+
+        // Validación básica
+        if (!tipoHabitacion || !numPersonas || !fecha) {
+            alert("Por favor complete todos los campos");
+            return;
+        }
+
+        // Enviar datos al servidor
+        const res = await fetch(`${apiURL}/update/reserva`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                tipoHabitacion, 
+                numPersonas, 
+                fecha 
+            })
+        });
+
+        const data = await res.json();
+        
+        if (!res.ok) {
+            // Mostrar mensaje específico del servidor
+            alert(data.message);
+            return;
+        }
+
+        // Éxito - mostrar detalles
+        alert(`Reserva actualizada:\n\nTipo: ${tipoHabitacion}\nPersonas: ${numPersonas}\nFecha: ${fecha}`);
+        
+        // Limpiar formulario
+        document.querySelector('form').reset();
+
+    } catch(error) {
+        alert("Error: " + error.message);
+        console.error("Error en actualizarReservaEquivalente:", error);
     }
 }
 
