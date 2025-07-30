@@ -1,5 +1,7 @@
 const apiURL = 'http://localhost:3000';
-async function crearReserva(){
+async function crearReserva(event){
+    event.preventDefault(); // Esto evita que el formulario se envíe
+    console.log("Función crearReserva() ejecutada");
     console.log("Función crearReserva() ejecutada");
     alert("Función iniciada");
     const nombre = document.getElementById('nombre').value.trim();
