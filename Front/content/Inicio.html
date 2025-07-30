@@ -10,8 +10,13 @@
     <section id="inicio">
         <div id = "gallery"><!--CARRUSEL DE FOTOS-->
             <div id ="galleryCont">
-                <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reserva la tuya ya</button>
-                <button class="btn-ghost" onclick="loadHTML('Inicio.html', 'rooms')">Conoce las habitaciones</button>
+                <div class="info-buttons">
+                    <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reserva la tuya ya</button>
+                    <button class="btn-ghost" onclick="loadHTML('Inicio.html', 'rooms')">Conoce las habitaciones</button>
+                </div>
+                <h1 class="slogan">
+                    <span class="color1">Despierta junto al mar</span><span class="color2"> descansa como en casa</span>
+                </h1>
             </div>   
         </div>
         <!--INFORMACIÓN DE LA EMPRESA-->
@@ -37,99 +42,111 @@
     <!--HABITACIONES-->
     <section class="room-section" id = rooms>
         <h1>Habitaciones</h1>
-        <!--KING SIZE-->
-        <h2>King Size</h2>
+        <!--Deluxe-->
+        <h2>Deluxe</h2>
         <div class="room-Gallery">
             <div class="room">
-                <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
-                    <h3>Habitación King Size</h3>
+                <div class="over-img" style="background-image: url(../resources/Habitacion_1-deluxe.jpg) ;">
+                    <h3>Single Suite</h3>
                     <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                 </div>
                 <div class="room-content">
                     <h4>Amenidades</h4>
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
+                        <li><strong>Todos los beneficios de una reservación Confort</strong></li>
+                        <li>Cama queen size con colchón ortopédico</li>
+                        <li>Smart TV de última generación</li>
+                        <li>Acceso a spa y gimnasio</li>
+                        <li>Servicio de habitaciones 24/7</li>
                     </ul>
                 </div>
                 <span></span>
             </div>
             <div class="room">
-                <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
-                    <h3>Habitación King Size</h3>
+                <div class="over-img" style="background-image: url(../resources/Habitacion_2-deluxe.jpg) ;">
+                    <h3>Confort Duo</h3>
                     <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                 </div>
                 <div class="room-content">
                     <h4>Amenidades</h4>
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
+                        <li><strong>Todos los beneficios de una reservación Confort</strong></li>
+                        <li>Cama king size o 2 queen size</li>
+                        <li>Acceso a áreas VIP</li>
+                        <li>Servicio de habitaciones 24/7</li>
+                        <li>Vista panorámica o balcón privado</li>
                     </ul>
                 </div>
                 <span></span>
             </div>
             <div class="room">
-                <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
-                    <h3>Habitación King Size</h3>
+                <div class="over-img" style="background-image: url(../resources/Habitacion_4-deluxe.jpg) ;">
+                    <h3>King Confort</h3>
                     <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
             </div>
                 <div class="room-content">
                     <h4>Amenidades</h4>
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
+                        <li><strong>Todos los beneficios de una reservación Confort</strong></li>
+                        <li>2 Camas king size o 1 king size y 2 queen size</li>
+                        <li>Sala de estar independiente</li>
+                        <li>Smart TV doble y sistema de sonido</li>
+                        <li>Servicio personalizado y amenities de lujo</li>
                     </ul>
                 </div>
                 <span></span>
             </div>
         </div>
-        <!--HOME SIZE-->
-        <h2>Home Size</h2>
+        <!--Confort-->
+        <h2>Confort</h2>
         <div class="room-Gallery">
             <div class="room">
-                <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
-                    <h3>Habitación Home Size</h3>
+                <div class="over-img" style="background-image: url(../resources/Habitacion_1.jpg) ;">
+                    <h3>Individual Clásica</h3>
                     <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                 </div>
                 <div class="room-content">
                     <h4>Amenidades</h4>
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
+                        <li>Cama Individual</li>
+                        <li>WiFi de alta velocidad</li>
+                        <li>Control de clima personalizado</li>
+                        <li>Mini bar básico</li>
+                        <li>Tv con servicios de streaming</li>
+                    </ul>
+                </div>
+                <span></span>
+            </div>
+            <div class="room">
+                <div class="over-img" style="background-image: url(../resources/Habitacion_2.jpg) ;">
+                    <h3>Suite Duo</h3>
+                    <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
+                </div>
+                <div class="room-content">
+                    <h4>Amenidades</h4>
+                    <ul>
+                        <li>Cama doble</li>
+                        <li>WiFi de alta velocidad</li>
+                        <li>Control de clima y sonido personalizado</li>
+                        <li>Mini bar surtido</li>
+                        <li>Baño con amenities premium</li>
                     </ul>
                 </div>
                 <span></span>
             </div>
             <div class="room">
                 <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
-                    <h3>Habitación Home Size</h3>
+                    <h3>Estancia Familiar</h3>
                     <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
                 </div>
                 <div class="room-content">
                     <h4>Amenidades</h4>
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                    </ul>
-                </div>
-                <span></span>
-            </div>
-            <div class="room">
-                <div class="over-img" style="background-image: url(../resources/Habitacion_4.jpg) ;">
-                    <h3>Habitación Home Size</h3>
-                    <button class="btn-color" onclick="loadHTML('Reservaciones.html')">Reservar</button>
-                </div>
-                <div class="room-content">
-                    <h4>Amenidades</h4>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
+                        <li>2 camas dobles o una doble y 2 individuales</li>
+                        <li>Espacio amplio para comodidad familiar</li>
+                        <li>WiFi de alta velocidad</li>
+                        <li>Mini bar surtido</li>
+                        <li>Baño con doble lavabo</li>
                     </ul>
                 </div>
                 <span></span>
@@ -137,6 +154,7 @@
         </div>
     </section><!--FIN DE HABITACIONES-->
     <!--FAQ-->
+    <div class="division" id ="top-FAQ"></div><!--DIVISION-->
     <section class="FAQ-section" id ="FAQ">
         <h1>Preguntas Frecuentes</h1>
         <div class="FAQ-box">
@@ -164,16 +182,36 @@
             <p>Sí, el hotel cuenta con acceso directo a la playa más tranquila y extensa de la región.</p>
         </div> 
     </section>
+    <!--CONTACT-->
+    <div class="division" id ="top-contact"></div><!--DIVISION-->
     <section class="contact-section" id="contact">
         <h1>Contactanos</h1>
-        <p><strong>Teléfono:</strong> +52 389 100 2345</p>
-        <p><strong>WhatsApp:</strong> +52 389 100 2345</p>
-        <p><strong>Correo Electrónico:</strong> contacto@NovilleroHotel.com</p>
-        <p><strong>Dirección:</strong> Luis Donaldo Colosio 133-Sur, 63466 Playa Novillero, Nay.</p>
-        <p><strong>También puedes seguirnos en redes sociales para conocer promociones, eventos y noticias:</strong><br><br>
-            Facebook: @HotelCostaNorte<br><br>
-            Instagram: @hotelcostanorte.mx
-        </p>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <img src="../resources/icons/telefono.png" class="contact-icon">
+                <p><strong>Teléfono</strong><br> +52 389 100 2345</p>
+            </div>
+            <div class="contact-item">
+                <img src="../resources/icons/whatsapp.png" class="contact-icon">
+                <p><strong>WhatsApp</strong><br> +52 389 100 2346</p>
+            </div>
+            <div class="contact-item">
+                <img src="../resources/icons/correo-electronico.png" class="contact-icon">
+                <p><strong>Correo Electrónico</strong><br> contact@NovHotel.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="../resources/icons/ubicacion-del-mapa.png" class="contact-icon">
+                <p><strong>Dirección</strong><br> Luis Donaldo Colosio 133-Sur, 63466 Playa Novillero, Nay.</p>
+            </div>
+            <div class="contact-item">
+                <img src="../resources/icons/facebook.png" class="contact-icon">
+                <p><strong>Facebook</strong><br> @HotelCostaNorte</p>
+            </div>
+            <div class="contact-item">
+                <img src="../resources/icons/instagram.png" class="contact-icon">
+                <p><strong>Instagram</strong><br> @hotelcostanorte.mx</p>
+            </div>  
+        </div>
     </section>
 </body>
 </html>
