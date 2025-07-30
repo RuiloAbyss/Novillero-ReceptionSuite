@@ -1,3 +1,134 @@
 .Bienvenida{
     text-align: center;
 }
+
+.responsive-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 15% 50px;
+}
+
+.form-gallery{
+    background-image: url("../resources/playa_5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 0px 12px 12px 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5% 10%;
+    background-color: #ebddcdd1;
+    border-radius: 12px 0px 0px 12px;
+}
+
+input[type='text'], input[type='date'], select{
+    padding: 10px;
+    margin: 10px 0 5px;
+    border-radius: 12px;
+    border: 1px solid var(--late);
+}
+label{
+    font-weight: bold;
+}
+
+.select-case> label{
+    font-weight: 200;
+}
+
+.select-case{
+    display: flex;
+    align-items: start;
+}
+
+.end-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+
+.fecha{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.room-class{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 10px;
+    width: 120%;
+}
+
+.form-people{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.form-btn{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+@media (max-width: 960px) {
+    .end-form{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .fecha{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .room-class{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 10px;
+    }
+    input[type='text'], input[type='date'], select{
+        padding: 10px;
+        margin: 5px 0 5px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body{
+        background-image: url("../resources/playa_5.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .responsive-form{
+        display: flex;
+        margin: 25px 10% 25px;
+    }
+
+    form{
+        display: flex;
+        border-radius: 12px; 
+        width: 100%;
+    }
+
+    .form-gallery{
+       display: none;
+    }
+}

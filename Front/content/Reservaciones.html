@@ -15,48 +15,55 @@
 
      <!--Reservaciones-->
     <div class="Bienvenida">
-    <p>Reservaciones</p>
-    <br>
     <h1>¿ Listo para tus vacaciones ideales ?</h1>
-    <p>¡ Reserva con nostros ahora mismo !</p>
     </div>
+    <div class="responsive-form">
     <!--Formulario-->
-    <form>
-        <!--Nombre-->
-        <label for="nombre">Nombre</label>
-        <input id="nombre" type="text" required>
-        <br>
-        <!--Apellidos-->
-        <label for="apellidos">Apellidos</label>
-        <input id="apellidos" type="text" required>
-        <br>
-        <!--fecha-->
-        <label for="fecha">Fecha</label>
-        <input id="fecha" type="date" required>
-        <br>
-        <!--Tipo habitacion-->
-        <label>¡ Escoje la experiencia para tu habitacion !</label>
-        <br>
-        <input type="radio" value="opcion1" id="radios" name="radios" checked>
-        <label for="radios">Estandar</label><br>
-        <input type="radio" value="opcion2" id="radios" name="radios">
-        <label for="Usado">Premium</label>
-        <br>
-
-        <label>¿ Con cuantas personas piensas reservar ?</label>
-        <br>
-       <select id="personas">
-         <option value="opcion1">1 persona</option>
-         <option value="opcion2">2 personas</option>
-         <option value="opcion3">4 personas</option>
-       </select>
-        <br>
-        <!--Botones-->
-         <button onclick="crearReserva()">Reservar</button>
-         <input type="reset" value="Limpiar">
-
-         <script src="/Novillero-ReceptionSuite/Front/scripts/script_func.js"></script>
+      <form>
+          <!--Nombre-->
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" required>
+          <br>
+          <!--Apellidos-->
+          <label for="apellidos">Apellidos</label>
+          <input id="apellidos" type="text" required>
+          <br>
+          <!--Tipo habitacion-->
+            <div class="form-people">
+              <label>¿Con cuantas personas piensas reservar?</label>
+              <select id="personas">
+                <option value="opcion1">1 persona</option>
+                <option value="opcion2">2 personas</option>
+                <option value="opcion3">4 personas</option>
+              </select>
+            </div>
+            <!--fecha-->
+            <div class="end-form">
+              <!--clase-->
+              <div class="room-class">
+                <label>Escoje tu Experiencia</label>
+                <div class="select-case">
+                  <input type="radio" value="opcion1" id="radios" name="radios" checked>
+                  <label for="radios">Estandar</label><br>
+                  <input type="radio" value="opcion2" id="radios" name="radios">
+                  <label for="radios">Premium</label>
+                </div>
+              </div>
+              <div class="fecha">
+                <label for="fecha">Fecha</label>
+                <input id="fecha" type="date" required>
+              </div>
+            </div>
+          <!--Botones-->
+            <div class="form-btn">
+              <button class="btn-color" onclick="crearReserva()">Reservar</button>
+              <input class="btn-color" type="reset" value="Limpiar">
+            </div>
+          
+          <script src="/Novillero-ReceptionSuite/Front/scripts/script_func.js"></script>
     </form>
+    <div class="form-gallery"></div>
+  </div>
 
 </body>
 </html>
