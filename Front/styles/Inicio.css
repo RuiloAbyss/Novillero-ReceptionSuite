@@ -1,4 +1,7 @@
 /*GALERIA DE IMAGENES*/
+h1{
+  font-size: xx-large;
+}
 #gallery {
   background-image: url("../resources/playa_5.jpg");
   background-size: cover;
@@ -9,10 +12,39 @@
 
 #galleryCont{
   aspect-ratio: 5 / 2;
-  display: flex;
+  display: grid;
   gap: 20px;
-  padding: 0 0 3% 10% ;
   align-items: end;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0% 5% 5%;
+}
+
+.info-buttons{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 120%;
+}
+
+.slogan{
+  display: flex;
+  flex-direction: column;
+}
+
+/*SLOGAN*/
+.slogan .color1 {
+  color: var(--americano);
+  width: 100%;
+  font-size: 300%;
+  text-align: end;
+}
+
+.slogan .color2 {
+  color: var(--crema);
+  width: 100%;
+  font-size: 300%;
+  text-align: end;
+  text-shadow: 1px 2px 2px var(--americano);
 }
 
 /*CONTENIDO DE INICIO-------------------*/
@@ -114,9 +146,34 @@
 
 /*CONTACT*/
 .contact-section{
+  display: flex;
+  flex-direction: column;
   padding: 100px 25% 100px 25%;
-  background-color: var(--americano);
+  background-color: var(--cafe);
   color: var(--crema);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 50px;
+}
+
+.contact-item{
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  width: 200px;
+}
+
+.contact-icon{
+  aspect-ratio: 1 / 1;
+  justify-content: center;
+  align-content: flex-start;
+  width: 100px;
 }
 
 /*RESPONSIVE 50%========================*/
@@ -129,6 +186,25 @@
     padding: 5%;
     align-items: end;
   }
+
+  .info-buttons{
+    gap: 15px;
+    width: 110%;
+  }
+
+  .info-buttons > .btn-color, .info-buttons > .btn-ghost{
+    font-size: 90%;
+  }
+
+  /*SLOGAN*/
+  .slogan .color1 {
+    font-size: 150%;
+  }
+
+  .slogan .color2 {
+    font-size: 150%;
+  }
+
   /*CONTENIDO DE INICIO-------------------*/
   .about{
     margin: 50px 15% 50px 15%;
@@ -142,11 +218,6 @@
   .FAQ-section{
     padding: 50px 15% 50px 15%;
   }
-  /*CONTACT*/
-  .contact-section{
-    padding: 50px 15% 50px 15%;
-  }
-  
 }
 
 /*RESPONSIVE 30%========================*/
@@ -159,6 +230,26 @@
     padding: 5%;
     align-items: end;
     justify-content: center;
+  }
+
+  .info-buttons{
+    gap: 10px;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .info-buttons > .btn-color, .info-buttons > .btn-ghost{
+    font-size: 90%;
+  }
+
+  /*SLOGAN*/
+  .slogan .color1 {
+    font-size: 150%;
+  }
+
+  .slogan .color2 {
+    font-size: 150%;
   }
   /*CONTENIDO DE INICIO-------------------*/
   .about{
@@ -184,15 +275,16 @@
   }
 
   .over-img > .btn-color{
-    padding: 6px;
+    padding: 8px;
     border: 2px solid var(--late);
     margin-bottom: 10px;
     background-color: var(--galleta);
+    font-size: 100%;
   }
 
   /*FAQ*/
   .FAQ-section{
-    padding: 30px 10% 30px 10%;
+    padding: 50px 10% 30px 10%;
   }
 
   .FAQ-box{
@@ -217,6 +309,11 @@
   /*CONTACT*/
   .contact-section{
     padding: 30px 10% 30px 10%;
+    justify-content: center;
   }
-  
+
+  .contact-grid{
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 30px;
+  }
 }
