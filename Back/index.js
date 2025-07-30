@@ -29,7 +29,6 @@ app.get('/',(req,res) => {
 });
 
 // Ruta para actualizar reserva
-// Ruta para actualizar reserva
 app.put('/update/reserva', async (req, res) => {
     try {
         const { tipoHabitacion, numPersonas, fecha } = req.body;
