@@ -27,8 +27,8 @@
         <input id="nombre" type="text" required>
         <br>
         <!--Apellidos-->
-        <label for="Apellidos">Apellidos</label>
-        <input id="Apellidos" type="text" required>
+        <label for="apellidos">Apellidos</label>
+        <input id="apellidos" type="text" required>
         <br>
         <!--fecha-->
         <label for="fecha">Fecha</label>
@@ -45,16 +45,17 @@
 
         <label>¿ Con cuantas personas piensas reservar ?</label>
         <br>
-       <select>
+       <select id="personas">
          <option value="opcion1">1 persona</option>
          <option value="opcion2">2 personas</option>
          <option value="opcion3">4 personas</option>
        </select>
         <br>
         <!--Botones-->
-        <input type="submit" value="Reservar">
-        <input type="reset" value="Limpiar">
+         <button onclick="crearReserva()">Reservar</button>
+         <input type="reset" value="Limpiar">
 
+         <script src="/Novillero-ReceptionSuite/Front/scripts/script_func.js"></script>
     </form>
 
 </body>
