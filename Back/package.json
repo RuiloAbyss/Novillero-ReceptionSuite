@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Matínez Toribio Eric Gabriel",
+  "author": "Matínez Toribio Eric Gabriel && Ruiz López Abisai",
   "license": "ISC",
   "description": "Base pequeña para Novillero's resort",
   "dependencies": {
