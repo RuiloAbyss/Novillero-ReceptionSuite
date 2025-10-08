@@ -9,4 +9,3 @@ Es una interfaz web diseñada para recepcionistas de hotel, enfocada en la gesti
 - 📋 **Reservaciones**: Permite ver la disponibildad de las habitaciones
 - 🏅 **Integraciones**: Ver y modificar disponibilidad de habitaciones en tiempo real
 
-Video de evidencia: https://drive.google.com/file/d/1KaLeW9tuSOWqiIEiqte64ForN-GNQqVB/view?usp=drive_link

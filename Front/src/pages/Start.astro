@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+import ColorButton from "../components/ColorButton.astro";
+---
+<section class="aspect-[5/2] flex bg-[url('../../public/playa_5.jpg')] bg-cover text-shadow-lg">
+  <div class="grid grid-cols-2 w-full h-screen">
+    <!--  Columna izquierda: botones -->
+    <div class="flex flex-col justify-end items-center p-8 space-y-4">
+      <div class="flex flex-row gap-5">
+        <ColorButton className="bg-late text-crema" label="Reservar ahora" />
+        <ColorButton className="bg-crema text-americano" label="Ver Las Habitaciones" />
+      </div>
+    </div>
+    <!-- columna derecha: texto -->
+    <div class="flex flex-col justify-end items-center p-8">
+      <h1 class="font-bold text-cafe text-center">Novillero Palazzo</h1>
+      <h2 class="font-semibold mb-15 text-crema ">Tu experiencia perfecta</h2>
+      <p class="text-lg text-crema mb-5">Descubre la comodidad y el estilo frente al mar.</p>
+    </div>
+  </div>
+</section>
+
+<section class= "m-5 flex flex-col justify-center items-center">
+  <h2>Acerca de Nosotros</h2>
+</section>

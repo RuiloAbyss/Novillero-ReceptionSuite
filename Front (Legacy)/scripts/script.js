@@ -1,5 +1,5 @@
 //FUNCION: CARGAR SEGMENTOS HTML
-function loadHTML(file, targetId = null) {
+function loadSection(file, targetId = null) {
   // Realiza una solicitud HTTP para obtener el archivo HTML especificado
   fetch(file)
     .then(res => res.text()) // Convierte la respuesta en texto (HTML)
