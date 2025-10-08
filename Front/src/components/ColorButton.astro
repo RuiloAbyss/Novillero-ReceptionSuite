@@ -1,21 +1,34 @@
 ---
 const {
   label = "Click aquí",
-  onClick = null,
   className = "",
   type = "button",
+  disabled = false,
+  theme = "crema",
+}: {
+  label?: string;
+  className?: string;
+  type?: string;
+  disabled?: boolean;
+  theme?: "light" | "dark"; 
 } = Astro.props;
 
-// Estilo base del botón
-const baseClasses =
-  "px-15 py-3 rounded-full font-bold transition-colors"
+const hasBg = /\bbg-[^\s]+/.test(className);
+
+const base =
+  "px-15 py-3 rounded-full font-semibold transition focus:outline-none disabled:opacity-50 hover: cursor-pointer";
+
+const themes: Record<"crema" | "cafe", string> = {
+  crema: "bg-crema text-cafe hover:bg-galleta",
+  cafe: "bg-cafe text-crema hover:bg-chocolate",
+};
+
+const defaultStyle = themes[theme]; // ya TypeScript sabe que es válido
+
+const style = `${base} ${hasBg ? className : `${defaultStyle}${className ? ` ${className}` : ""}`}`.trim();
 ---
 
-<button
-  type={type}
-  class={`${baseClasses} ${className}`}
-  onclick={onClick}
->
+<button class={style} disabled={disabled}>
   {label}
+  <slot />
 </button>
-

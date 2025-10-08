@@ -2,10 +2,12 @@
 @config "../../tailwind.config.cjs";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
+
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
+  color: var(--color-cafe);
 }
 
 /* Estilos base para pantallas grandes */
@@ -52,7 +54,7 @@ a:hover {
 
 /* Responsividad para pantallas medianas */
 @media (max-width: 1024px) {
-  h1 { font-size: 3rem; }
+  h1 { font-size: 4rem; }
   h2 { font-size: 2.5rem; }
   h3 { font-size: 1.75rem; }
   h4 { font-size: 1.25rem; }
@@ -63,9 +65,9 @@ a:hover {
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 640px) {
   h1 { font-size: 2.25rem; }
-  h2 { font-size: 1.75rem; }
-  h3 { font-size: 1.5rem; }
-  h4 { font-size: 1.125rem; }
-  p  { font-size: 1rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.125rem; }
+  h4 { font-size: 1rem; }
+  p  { font-size: 0.75rem; }
   button {font-size: 0.75rem;}
 }

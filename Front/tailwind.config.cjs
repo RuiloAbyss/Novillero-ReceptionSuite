@@ -12,6 +12,7 @@ export default {
         "galleta": "#d5a679",
         "late": "#b47b48",
         "cafe": "#2a1e14",
+        "chocolate": "#453d2a"
       },
     },
   },
