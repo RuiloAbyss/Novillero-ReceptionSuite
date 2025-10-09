@@ -1,6 +1,6 @@
 ---
-title: Suite Duo
-description: asd
+title: Duo Suite 
+description: Una Experiencia Agradable En Pareja
 img: Habitacion_2.jpg
 amenities:
     - Cama Doble

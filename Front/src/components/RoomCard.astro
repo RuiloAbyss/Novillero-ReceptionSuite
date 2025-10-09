@@ -1,5 +1,6 @@
 ---
 import { string } from "astro:schema";
+import ColorButton from "./ColorButton.astro";
 const {
     title = "",
     description = "",
@@ -13,27 +14,33 @@ const {
     amenities?: string;
     slug?: string;
 } = Astro.props
-
-
 ---
 <a 
   href={`/room/${slug}`} 
-  class="no-underline flex-col text-cafe hover:text-cafe-oscuro block group"
+  class="no-underline flex-col text-cafe hover:block group"
 >
-  <article class="rounded-xl gap-4 items-center">
-    <img 
-      src={`/rooms/${img}`} 
-      alt={title} 
-      class="w-48 h-32 rounded-lg object-cover"
-    />
-    <div class="flex flex-col">
-      <h4 class="text-lg font-semibold text-cafe">{title}</h4>
-      <p class="text-cafe">{description}</p>
-      {amenities?.length > 0 && (
-        <ul class="text-cafe hidden group-hover:flex flex-col gap-1 list-disc list-inside">
-          {amenities.map(a => <li>{a}</li>)}
-        </ul>
-      )}
+  <article class="gap-4 items-center">
+    <div 
+      class=`w-165 aspect-video bg-cover bg-center rounded-t-lg` 
+      style={`background-image: url(/rooms/${img})`}
+    ><!--aviso emergente-->
+      <div class="flex justify-center items-center h-full">
+        <h5 class="text-crema [text-shadow:2px_0px_8px_rgba(0,0,0,0.7)] opacity-0 transition-opacity group-hover:opacity-100 z-10">
+          Reserva con un solo click</h5>
+      </div>
+    </div>
+    <div class="w-full h-[100px] bg-crema rounded-b-lg px-10 py-5
+                overflow-hidden transition-all duration-300 group-hover:h-[230px] group-hover:-translate-y-35">
+      <h4 class="text-cafe">{title}</h4>
+      <h5 class="text-cafe">{description}</h5><hr class="border-cafe my-3">
+      <!--Sección oculta-->
+      <div class= "text-sm opacity-0 transition-opacity duration-100 delay-200 group-hover:opacity-100"> 
+        {amenities?.length > 0 && (
+          <ul class="text-cafe list-disc list-inside">
+            {amenities.map(a => <li key={a}>{a}</li>)}
+          </ul>
+        )}
+      </div>  
     </div>
   </article>
 </a>

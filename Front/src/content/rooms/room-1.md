@@ -1,6 +1,6 @@
 ---
-title: Suite Classic
-description: asd
+title: Single Suite
+description: Una Habitación Sencilla y Acogedora
 img: Habitacion_1.jpg
 amenities:
     - Cama Individual

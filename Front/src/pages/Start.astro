@@ -21,32 +21,37 @@ const rooms = await getCollection("rooms");
     <div class="flex flex-col justify-end items-end pr-20 pb-5">
       <h1 class="font-bold text-cafe text-center">Novillero Palazzo</h1>
       <h2 class="font-semibold mb-20 text-crema">Tu experiencia perfecta</h2>
-      <h4 class="text-lg text-chocolate my-5">Descubre la comodidad y el estilo frente al mar.</h4>
+      <h4 class="text-lg text-chocolate my-5">Descubre la comodidad y el estilo frente al mar</h4>
     </div>
   </div>
 </section>
+<Section title="Nuestras Habitaciones" id="Rooms" className= "px-20 bg-w">
+  <div
+    class="flex gap-10 flex-nowrap overflow-x-auto overflow-y-hidden scrollbar-hide snap-x snap-mandatory h-[75vh] px-5"
+  >
+    {rooms.map(room => {
+      const { slug, data } = room
+      const { img, title, description, amenities } = data
 
-<Section title="Nuestras Habitaciones" id="Rooms" class="flex gap-10">
-  {
-    rooms.map(room => {
-      const {slug, data} = room
-      const {img, title, description, amenities} = data
-      
-      return(
-        <RoomCard 
-        slug = {slug}
-        title = {title} 
-        img = {img}
-        description = {description}
-        amenities = {amenities}
-        />
+      return (
+        <div key={slug} class="flex-shrink-0 snap-start min-w-[250px]">
+          <RoomCard
+            slug={slug}
+            title={title}
+            img={img}
+            description={description}
+            amenities={amenities}
+          />
+        </div>
       )
-    })
-  }
+    })}
+  </div>
 </Section>
 
 
-<Section title = "Quienes Somos" id = "AboutUs">
+
+
+<Section title = "Quienes Somos" id = "AboutUs" className= "mx-[20%]">
   <p>
     Somos una empresa dedicada a brindarte una experiencia inigualable en hospitalidad y recepción, 
     ubicada en la hermosa costa norte de Nayarit. Nos especializamos en ofrecer servicios de calidad 
