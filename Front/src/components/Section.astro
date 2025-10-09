@@ -1,0 +1,19 @@
+---
+import { string } from "astro:schema";
+
+const{
+    title = "",
+    className = "",
+    sectionId = "",
+}: {
+    title?: string;
+    className?: string;
+    sectionId?: string;
+} = Astro.props
+
+const style = "mx-[25%] my-10 flex flex-col justify-center items-center";
+---
+<section id={sectionId} class={style}>
+    <h3 class="mb-5">{title}</h3>
+    <slot />
+</section>
